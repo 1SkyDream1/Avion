@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Product listings</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20231230173838">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header--home">
+			<div class="header__container">
+				<div class="header__body">
+					<a href="#" data-popup="#search" class="header__search _icon-search"></a>
+					<button class="header__logo">Avion</button>
+					<div data-da=".menu__body, 767.98" class="header__info">
+						<a href="#" class="header__cart _icon-cart"></a>
+						<a href="#" class="header__user _icon-user"></a>
+					</div>
+					<button type="button" class="header__icon icon-menu"></button>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Ceramics</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Plant pots</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Tables</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Chairs</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Crockery</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Tableware</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Cutlery</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__listing listing">
+				<div data-watch class="listing__top top-listing">
+					<div class="top-listing__container">
+						<h1 class="top-listing__title title title--1 title--white">All products</h1>
+					</div>
+					<div class="top-listing__bg"><picture><source srcset="img/listing/bg.webp" type="image/webp"><img src="img/listing/bg.jpg" alt="Bg"></picture></div>
+				</div>
+				<div class="listing__body body-listing">
+					<div class="body-listing__container">
+						<div class="body-listing__filter filter-listing">
+							<div data-spollers class="filter-listing__spollers spollers-filter">
+								<details class="spollers-filter__item">
+									<summary class="spollers-filter__title button button--light-grey text text-medium  _icon-arrow-bottom">Filters</summary>
+									<div class="spollers-filter__body spollers-filter__body--filters"></div>
+								</details>
+								<details class="spollers-filter__item">
+									<summary class="spollers-filter__title button button--light-grey _icon-arrow-bottom">Sorting</summary>
+									<div class="spollers-filter__body spollers-filter__body--sorting"></div>
+								</details>
+							</div>
+							<div class="filter-listing__wrapper">
+								<div data-da=".spollers-filter__body--filters, 700" class="filter-listing__filters">
+									<div class="filter-listing__item">
+										<h3 class="filter-listing__title title title--5">Product type</h3>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="type_1" value="1" name="type" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="type_1" class="options-filter__label checkbox__label">Furniture</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="type_2" value="1" name="type" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="type_2" class="options-filter__label checkbox__label">Homeware</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="type_3" value="1" name="type" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="type_3" class="options-filter__label checkbox__label">Sofas</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input checked id="type_4" value="1" name="type" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="type_4" class="options-filter__label checkbox__label">Homeware</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="type_5" value="1" name="type" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="type_5" class="options-filter__label checkbox__label">Light fittings</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="type_6" value="1" name="type" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="type_6" class="options-filter__label checkbox__label">Accessories</label>
+										</div>
+									</div>
+									<div class="filter-listing__item">
+										<h3 class="filter-listing__title title title--5">Price</h3>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="price_1" value="1" name="price" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="price_1" class="options-filter__label checkbox__label">0 - 100</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="price_2" value="1" name="price" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="price_2" class="options-filter__label checkbox__label">101 - 250</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="price_3" value="1" name="price" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="price_3" class="options-filter__label checkbox__label">250 +</label>
+										</div>
+									</div>
+									<div class="filter-listing__item">
+										<h3 class="filter-listing__title title title--5">Designer</h3>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="designer_1" value="1" name="designer" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="designer_1" class="options-filter__label checkbox__label">Robert Smith</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="designer_2" value="1" name="designer" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="designer_2" class="options-filter__label checkbox__label">Liam Gallagher</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="designer_3" value="1" name="designer" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="designer_3" class="options-filter__label checkbox__label">Biggie Smalls</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="designer_4" value="1" name="designer" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="designer_4" class="options-filter__label checkbox__label">Thom Yorke</label>
+										</div>
+									</div>
+								</div>
+								<div data-da=".spollers-filter__body--sorting, 700" class="filter-listing__sorting">
+									<div class="filter-listing__item">
+										<h3 class="filter-listing__title title title--5">Date</h3>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="date_1" value="1" name="date" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="date_1" class="options-filter__label checkbox__label">12.12</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="date_2" value="1" name="date" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="date_2" class="options-filter__label checkbox__label">12.14</label>
+										</div>
+										<div class="filter-listing__options options-filter checkbox">
+											<input id="date_3" value="1" name="date" type="checkbox" class="options-filter__input checkbox__input">
+											<label for="date_3" class="options-filter__label checkbox__label">12.14</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-listing__products products-listing">
+							<div class="products-listing__items">
+								<div data-watch data-watch-threshold='0.3' data-watch-once class="products-listing__item item-products">
+									<a href="#" class="item-products__image-ibg"><picture><source data-srcset="img/listing/products/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/listing/products/1.jpg" alt="Image"></picture></a>
+									<div class="item-products__body">
+										<h3 class="item-products__title title title--3">The Dandy chair</h3>
+										<div class="item-products__price text text--large">£250</div>
+									</div>
+								</div>
+								<div data-watch data-watch-threshold='0.3' data-watch-once class="products-listing__item item-products">
+									<a href="#" class="item-products__image-ibg"><picture><source data-srcset="img/listing/products/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/listing/products/2.jpg" alt="Image"></picture></a>
+									<div class="item-products__body">
+										<h3 class="item-products__title title title--3">The Dandy chair</h3>
+										<div class="item-products__price text text--large">£250</div>
+									</div>
+								</div>
+								<div data-watch data-watch-threshold='0.3' data-watch-once class="products-listing__item item-products">
+									<a href="#" class="item-products__image-ibg"><picture><source data-srcset="img/listing/products/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/listing/products/3.jpg" alt="Image"></picture></a>
+									<div class="item-products__body">
+										<h3 class="item-products__title title title--3">The Dandy chair</h3>
+										<div class="item-products__price text text--large">£250</div>
+									</div>
+								</div>
+								<div data-watch data-watch-threshold='0.3' data-watch-once class="products-listing__item item-products">
+									<a href="#" class="item-products__image-ibg"><picture><source data-srcset="img/listing/products/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/listing/products/4.jpg" alt="Image"></picture></a>
+									<div class="item-products__body">
+										<h3 class="item-products__title title title--3">The Dandy chair</h3>
+										<div class="item-products__price text text--large">£250</div>
+									</div>
+								</div>
+								<div data-watch data-watch-threshold='0.3' data-watch-once class="products-listing__item item-products">
+									<a href="#" class="item-products__image-ibg"><picture><source data-srcset="img/listing/products/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/listing/products/5.jpg" alt="Image"></picture></a>
+									<div class="item-products__body">
+										<h3 class="item-products__title title title--3">The Dandy chair</h3>
+										<div class="item-products__price text text--large">£250</div>
+									</div>
+								</div>
+								<div data-watch data-watch-threshold='0.3' data-watch-once class="products-listing__item item-products">
+									<a href="#" class="item-products__image-ibg"><picture><source data-srcset="img/listing/products/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/listing/products/6.jpg" alt="Image"></picture></a>
+									<div class="item-products__body">
+										<h3 class="item-products__title title title--3">The Dandy chair</h3>
+										<div class="item-products__price text text--large">£250</div>
+									</div>
+								</div>
+								<div data-watch data-watch-threshold='0.3' data-watch-once class="products-listing__item item-products">
+									<a href="#" class="item-products__image-ibg"><picture><source data-srcset="img/listing/products/7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/listing/products/7.jpg" alt="Image"></picture></a>
+									<div class="item-products__body">
+										<h3 class="item-products__title title title--3">The Dandy chair</h3>
+										<div class="item-products__price text text--large">£250</div>
+									</div>
+								</div>
+								<div data-watch data-watch-threshold='0.3' data-watch-once class="products-listing__item item-products">
+									<a href="#" class="item-products__image-ibg"><picture><source data-srcset="img/listing/products/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/listing/products/8.jpg" alt="Image"></picture></a>
+									<div class="item-products__body">
+										<h3 class="item-products__title title title--3">The Dandy chair</h3>
+										<div class="item-products__price text text--large">£250</div>
+									</div>
+								</div>
+								<div data-watch data-watch-threshold='0.3' data-watch-once class="products-listing__item item-products">
+									<a href="#" class="item-products__image-ibg"><picture><source data-srcset="img/listing/products/9.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/listing/products/9.jpg" alt="Image"></picture></a>
+									<div class="item-products__body">
+										<h3 class="item-products__title title title--3">The Dandy chair</h3>
+										<div class="item-products__price text text--large">£250</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="products-listing__more button button--light-grey">Load more</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__main main-footer">
+					<div class="main-footer__columns">
+						<div class="main-footer__column">
+							<h5 class="main-footer__title title--5 title--white">Menu</h5>
+							<ul class="main-footer__list">
+								<li class="main-footer__item"><a href="#" class="main-footer__link">New arrivals</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Best sellers</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Recently viewed</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Popular this week</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">All products</a></li>
+							</ul>
+						</div>
+						<div class="main-footer__column">
+							<h5 class="main-footer__title title--5 title--white">Categories</h5>
+							<ul class="main-footer__list">
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Crockery</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Furniture</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Homeware</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Plant pots</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Chairs</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Crockery</a></li>
+							</ul>
+						</div>
+						<div class="main-footer__column">
+							<h5 class="main-footer__title title--5 title--white">Our company</h5>
+							<ul class="main-footer__list">
+								<li class="main-footer__item"><a href="#" class="main-footer__link">About us</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Vacancies</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Contact us</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Privacy</a></li>
+								<li class="main-footer__item"><a href="#" class="main-footer__link">Returns policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<form class="main-footer__form email" action="#">
+						<input data-required="email" type="text" placeholder="your@email.com" class="email__input email__input--footer">
+						<button type="submit" class="email__button button button-medium button--white">Sign up</button>
+					</form>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__copy">Copyright 2022 Avion LTD</div>
+					<ul class="bottom-footer__list">
+						<li class="bottom-footer__item"><a href="#" class="bottom-footer__link _icon-linkedin"></a></li>
+						<li class="bottom-footer__item"><a href="#" class="bottom-footer__link _icon-facebook"></a></li>
+						<li class="bottom-footer__item"><a href="#" class="bottom-footer__link _icon-instagram"></a></li>
+						<li class="bottom-footer__item"><a href="#" class="bottom-footer__link _icon-skype"></a></li>
+						<li class="bottom-footer__item"><a href="#" class="bottom-footer__link _icon-twitter"></a></li>
+						<li class="bottom-footer__item"><a href="#" class="bottom-footer__link _icon-pinterest"></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="search" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">❌</button>
+				<div class="search-popup">
+					<form action="#" class="search-popup__form">
+						<input autocomplete="off" type="text" name="form[]" placeholder="..." class="search-popup__input">
+						<button type="submit" class="search-popup__button button button--dark-primary">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20231230173838"></script>
+</body>
+
+</html>
